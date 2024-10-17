@@ -7,5 +7,6 @@ services:
       - "8087:8087"
     volumes:
       - .:/usr/src/app
+      - /usr/src/app/node_modules
     environment:
       - NODE_ENV=production
