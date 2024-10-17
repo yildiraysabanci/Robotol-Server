@@ -1,0 +1,11 @@
+services:
+  websocket-server:
+    build: .
+    container_name: websocket-server
+    ports:
+      - "8085:8085"
+      - "8087:8087"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - NODE_ENV=production
